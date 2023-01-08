@@ -1,4 +1,4 @@
-## Password Generator
+## Gerador de Senhas aleartórias
 
 <div align="center">
 
