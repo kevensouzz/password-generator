@@ -62,8 +62,6 @@ body
                 margin: 0px 25px
                 &:focus
                     outline: none
-                &:hover
-                    cursor: pointer
         section
             display: flex
             flex-direction: column
@@ -99,13 +97,18 @@ body
             border-radius: 25px
             box-shadow: 0px 0px 5px $emphasis-color
             color: $emphasis-color
+
+@media (min-width: 768px)
+    button
+        &:hover
+            cursor: pointer
+
+    #password
+        input
             &:hover
                 cursor: pointer
 
 @media (max-width: 768px)
-    *
-        &:hover
-            cursor: default
     main
         max-width: 320px
 
