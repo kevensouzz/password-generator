@@ -1,4 +1,4 @@
-## Gerador de Senhas aleartórias
+## Gerador de Senhas Aleartórias
 
 <div align="center">
 
