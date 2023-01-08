@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Keven Souza">
+    <meta name="description" content="Gerador de senhas">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="icon/favicon.ico">
+    <link rel="manifest" href="icon/site.webmanifest">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Password Generator</title>
+</head>
+
+<body>
+    <main>
+        <div id="password">
+            <input type="text" placeholder="Password">
+        </div>
+
+        <section id="range">
+            <input type="range" id="lenght" name="lenght" min="6" max="24">
+            <label for="lenght"></label>
+        </section>
+
+        <section id="checkbox">
+            <div>
+                <input type="checkbox" id="lower">
+                <label for="lower">Letras Minúsculas</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="upper">
+                <label for="upper">Letras Maiúsculas</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="number">
+                <label for="number">Números</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="symbol">
+                <label for="symbol">Símbolos</label>
+            </div>
+
+            <div id="btn">
+                <button id="btn-gerar">Gerar</button>
+                <button id="btncopiar">copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
