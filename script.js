@@ -36,9 +36,7 @@ const generatePassword = (
         ...(hasUpper ? caractersUpper : []),
         ...(hasNumber ? Numbers : []),
         ...(hasSymbol ? Symbols : []),
-    ]
-
-    if (newArray.length === 0) return
+    ] 
 
     let passwordResult = ""
 
@@ -46,6 +44,10 @@ const generatePassword = (
         const randomIndex = Math.floor(Math.random() * newArray.length)
         passwordResult += newArray[randomIndex]
     }
+
+    if (newArray.length === 0) {
+    passwordResult = ""}
+
     password.innerHTML = passwordResult
 }
 
